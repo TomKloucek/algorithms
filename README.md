@@ -21,6 +21,7 @@ To find all the prime numbers less than or equal to a given integer n by Eratost
 
 
 [Solution in C](eratosthenes_sieve/eratosthenes_sieve.c)
+
 [Solution in Python](eratosthenes_sieve/eratosthenes_sieve.py)
 
 ## Knight's tour
@@ -34,4 +35,5 @@ Brute-force algorithms
 A brute-force search for a knight's tour is impractical on all but the smallest boards.[15] For example, there are approximately 4×1051 possible move sequences on an 8 × 8 board,[16] and it is well beyond the capacity of modern computers (or networks of computers) to perform operations on such a large set. However, the size of this number is not indicative of the difficulty of the problem, which can be solved "by using human insight and ingenuity ... without much difficulty.
 
 [Solution in C](knights_tour/knights_tour.c)
+
 [Solution in Python](knights_tour/knights_tour.py)
