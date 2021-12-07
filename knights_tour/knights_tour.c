@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// check if move is valid, returns 1 if yes, if not returns 0
 int valid_move(int size, int board[size][size], int **eligible,int col, int row) {
     for (int i = 0; i < 8; i++) {
         if (eligible[i][0] == col && eligible[i][1] == row && board[eligible[i][1]][eligible[i][0]] == -1) {
@@ -11,6 +12,7 @@ int valid_move(int size, int board[size][size], int **eligible,int col, int row)
     return 0;
 }
 
+// returns array of arrays [x,y] with eligible positions
 int **valid_positions(int x, int y, int size) {
     int **eligible;
     eligible = malloc(sizeof(int*)*8);
@@ -34,6 +36,8 @@ int **valid_positions(int x, int y, int size) {
     }
     return eligible;
 }
+
+// recursive function for moving knight
 int move_knight(int size, int board[size][size],int move,int row, int col) {
     int counter = 0;
     if (move == (size*size)) {
@@ -61,6 +65,7 @@ int move_knight(int size, int board[size][size],int move,int row, int col) {
     return counter;
 }
 
+// prints board in readable way
 void print_board( int size, int board[size][size]) {
     printf("-------------------------\n");
     for (int row = 0; row < size; row++) {
@@ -109,6 +114,8 @@ int main(int argc, char *argv[] ) {
     }
     printf("%d\n",total);
     print_board(board_size,result_board);
+
+    // in 5x5 board, program takes 13s
 
     return 0;
 }

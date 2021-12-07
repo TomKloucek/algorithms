@@ -10,4 +10,5 @@ eratosthenes_sieve(int(sys.argv[1]))
 ### Results
 # Prime numbers under 25 - time: 0,026s
 # Prime numbers under 100,000 - time: 0,088s
-# Prime numbers undeer 250,000 - time: 0,266s
+# Prime numbers under 250,000 - time: 0,266s
+# Prime numbers under 1,000,000 - time: 2,074s
